@@ -1,0 +1,21 @@
+using System;
+
+using CRMBIZ;
+
+namespace CRMBIZ
+{
+    
+    public class CustomerRepositoryTest
+    {
+        
+        public static void Main(string[] args)
+        {
+            CustomerRepository c = new CustomerRepository();
+            Customer d=c.Retrieve(1);
+            string s = d.EmailAddress;
+            Console.WriteLine(s);
+
+
+        }
+    }
+}
